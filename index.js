@@ -11,7 +11,7 @@ app.set('view engine', 'ejs')
     // app.use(bodyparser.json()); //utilizes the body-parser package
     .use(express.static(path.join(__dirname, 'public')))
 
-const routes = require('./routes/home')
+const routes = require('./routes/routes')
 app.use('/', routes)
 
 app.listen(PORT)
