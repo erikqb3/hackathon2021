@@ -15,4 +15,7 @@ li > a:active {
 
 li {
   list-style: none;
+  font-size: 2em;
+  line-height: 2em;
+  background-color: #62bdff;
 }
