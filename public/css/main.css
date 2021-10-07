@@ -12,3 +12,7 @@ li > a:active {
   width: 100%;
   display: block;
 }
+
+li {
+  list-style: none;
+}
