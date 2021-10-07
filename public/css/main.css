@@ -12,3 +12,6 @@ li > a:active {
   width: 100%;
   display: block;
 }
+.friends_section{
+  float:right
+}
