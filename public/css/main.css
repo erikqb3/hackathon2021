@@ -12,11 +12,3 @@ li > a:active {
   width: 100%;
   display: block;
 }
-
-li {
-  list-style: none;
-  font-size: 2em;
-  line-height: 2em;
-  width: 25%;
-  background-color: #62bdff;
-}
