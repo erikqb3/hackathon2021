@@ -1,0 +1,2 @@
+MONGODB_URL=mongodb+srv://erikbirch:D8owoqsFQRZuqFno@cluster0.atywg.mongodb.net/shop?retryWrites=true&w=majority
+PORT=3000
