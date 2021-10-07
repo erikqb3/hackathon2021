@@ -1,3 +1,6 @@
+const User = require('../models/user');
+const bcrypt = require('bcryptjs');
+
 exports.getIndex = (req, res, next) => {
     res.render('index');
 }
@@ -24,4 +27,28 @@ exports.getLeaderboard = (req, res, next) => {
 
 exports.getContact = (req, res, next) => {
     res.render('contact')
+}
+
+exports.getSignup = (req, res, next) => {
+    res.render('signup');
+}
+
+exports.postSignup = (req, res, next) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    
+    // insert security stuff here
+    bcrypt.hash(password, 10).then(hashedPassword => {
+        const user = new User({
+            username: username,
+            password: hashedPassword
+        });
+        return user.save();
+    }).then(result => {
+        res.redirect('/')
+    }).catch(err => {console.log(err)})
+
+    
+    
 }
