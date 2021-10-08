@@ -33,6 +33,10 @@ exports.getSignup = (req, res, next) => {
     res.render('signup');
 }
 
+exports.getLogin = (req, res, next) => {
+    res.render('login')
+}
+
 exports.postSignup = (req, res, next) => {
     const username = req.body.username;
     const password = req.body.password;
