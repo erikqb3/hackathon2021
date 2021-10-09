@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/game.css">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/javascript/game.js"></script>
     <title>FreeRead_Game</title>
 </head>
 <body>
-    <p><a href="index.html">Home</a></p>
-    <header>
-        <img class = "banner" src ="">
-    </header>
     <%- include('navLinks_shortcut.ejs') %>
+    <div class="centralContent">
+        <div class="timer" id="timer"></div>
+        <div class="container">
+            <div class="quote-display" id="quoteDisplay"></div>
+            <textarea id="quoteInput"  class="quote-input" autofocus></textarea>
+            <div id="sentenceCount">Sentence Count = <span id=SC_value>0</span></div>
+            <div>Speed = <span id="recentSpeed">0</span> wpm</div>
+            <div>Fastest Speed = <span id="topSpeed">0</span> wpm</div>
+        </div>
+    </div>
 </body>
 </html>
