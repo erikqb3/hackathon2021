@@ -8,15 +8,8 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <p><a href="index.html">Home</a></p>
-    <ul>
-        <li><a href="Profile.html">Profile</a></li>
-        <li><a href="AboutPage.html">About</a></li>
-        <li><a href="Game.html">Game</a></li>
-        <li><a href="Library.html">Library</a></li>
-        <li><a href="Leaderboard.html">Leader Board</a></li>
-        <li><a href="ContactUs.html">Contact Us</a></li>
-    </ul>
+    <p><a href="/">Home</a></p>
+    <%- include('navLinks_shortcut.ejs') %>
 
     <form action="/signup" method="POST" novalidate>
         <label for="username">Username</label>

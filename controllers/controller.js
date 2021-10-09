@@ -56,3 +56,30 @@ exports.postSignup = (req, res, next) => {
     
     
 }
+
+exports.postLogin = (req, res, next) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    User.findOne({username: username})
+        .then(user => {
+            if (!user) {
+                return res.status(422).render('login');
+            }
+            bcrypt.compare(password, user.password)
+                .then(doMatch => {
+                    if (doMatch) {
+                        req.session.isLoggedIn = true;
+                        req.session.user = user;
+                        return req.session.save((err) => {
+                            console.log(err);
+                            res.redirect('/');
+                        });
+                    }
+                    return res.status(422).render('/login');
+                }).catch(err => {
+                    console.log(err);
+                    res.redirect('/login')
+                })
+        }).catch(err => console.log(err));
+};
