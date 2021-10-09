@@ -15,5 +15,7 @@ li > a:active {
 
 nav > ul {
   list-style: none;
-  background-color: blue;
+  background-color: #35c0ff;
+  width: 10%;
+  font-size: 2em;
 }
