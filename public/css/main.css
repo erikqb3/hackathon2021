@@ -20,7 +20,7 @@ div.centralContent {
   height: auto; /*arbitrary value*/
   margin: 25px auto;
   padding: 25px 0;
-  text-align: center;
+  /* text-align: center; */
   background-color: white;
 }
 
