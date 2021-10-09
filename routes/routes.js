@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/controller');
+const isAuth = require('../middleware/is-auth')
 
 router.get('/', controller.getIndex);
-router.get('/profile', controller.getProfile);
+router.get('/profile', isAuth, controller.getProfile);
 router.get('/about', controller.getAbout);
 router.get('/game', controller.getGame);
 router.get('/library', controller.getLibrary);
