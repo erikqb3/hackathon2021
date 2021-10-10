@@ -6,7 +6,8 @@ exports.getIndex = (req, res, next) => {
 }
 
 exports.getProfile = (req, res, next) => {
-    res.render('profile')
+    const numSentences = req.user.numSentences;
+    res.render('profile', {numSentences: numSentences})
 }
 
 exports.getAbout = (req, res, next) => {
