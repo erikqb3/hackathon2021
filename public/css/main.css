@@ -9,6 +9,7 @@ body {
   height: 200px;
   margin: 0 auto;
   border: 5px solid #d67d7d;
+  margin-bottom: 25px;
 }
 
 div.centralContent {
@@ -38,6 +39,97 @@ div.centralContent > p {
   color: rgba(0, 0, 0, 0.6);
   padding-left: 115px;
   margin-top: 0px;
+}
+
+/* div#leaderBoardToggleSwitch_holder {
+  display: hidden;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  background-color: #23b5aa;
+  padding: 0;
+}
+ul#leaderBoardToggleSwitch {
+  display: flex;
+  display: hidden;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0px;
+}
+ul#leaderBoardToggleSwitch > li {
+  display: block;
+  display: hidden;
+  font-size: 1.5em;
+  line-height: 2em;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+} */
+div.leaderBoardContent {
+  background-color: #23b5aa;
+  border: none;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-template-columns: 15% 15% 1fr 35%;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 150px;
+  align-items: center;
+}
+
+div.leaderBoardContent > p.rankNumb {
+  grid-column: 1;
+  grid-row: 1/4;
+  color: black;
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+div.leaderBoardContent > img.profilePic {
+  grid-column: 2;
+  grid-row: 1/4;
+  width: 90%;
+  margin: 0 auto;
+}
+div.leaderBoardContent > p.userName {
+  grid-column: 3;
+  grid-row: 1/4;
+  color: black;
+  font-size: 2.75em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+div.leaderBoardContent > p.Score {
+  grid-column: 4;
+  grid-row: 1;
+  color: black;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+div.leaderBoardContent > p.Speed {
+  grid-column: 4;
+  grid-row: 2;
+  color: black;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+div.leaderBoardContent > p.Books {
+  grid-column: 4;
+  grid-row: 3;
+  color: black;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 /*Nav Stuff*/
@@ -150,7 +242,7 @@ div.stickyTest2 {
   position: sticky;
   top: 0px;
 }
-.countries{
+.countries {
   width: 60%;
   height: auto; /*arbitrary value*/
   margin: 25px auto;
@@ -158,7 +250,7 @@ div.stickyTest2 {
   text-align: center;
   background-color: white;
 }
-.effects{
+.effects {
   width: 60%;
   height: auto; /*arbitrary value*/
   margin: 25px auto;
@@ -167,7 +259,7 @@ div.stickyTest2 {
   background-color: white;
 }
 
-.purpose{
+.purpose {
   width: 60%;
   height: auto; /*arbitrary value*/
   margin: 25px auto;
