@@ -37,6 +37,10 @@ exports.getLogin = (req, res, next) => {
     res.render('login')
 }
 
+exports.postAddSentence = (req, res, next) => {
+    req.user.addSentence();
+}
+
 exports.postSignup = (req, res, next) => {
     const username = req.body.username;
     const password = req.body.password;
@@ -46,7 +50,8 @@ exports.postSignup = (req, res, next) => {
     bcrypt.hash(password, 10).then(hashedPassword => {
         const user = new User({
             username: username,
-            password: hashedPassword
+            password: hashedPassword,
+            numSentences: 0
         });
         return user.save();
     }).then(result => {
