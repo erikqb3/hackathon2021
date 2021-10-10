@@ -52,9 +52,6 @@ exports.postSignup = (req, res, next) => {
     }).then(result => {
         res.redirect('/')
     }).catch(err => {console.log(err)})
-
-    
-    
 }
 
 exports.postLogin = (req, res, next) => {
@@ -76,10 +73,17 @@ exports.postLogin = (req, res, next) => {
                             res.redirect('/');
                         });
                     }
-                    return res.status(422).render('/login');
+                    return res.status(422).render('login');
                 }).catch(err => {
                     console.log(err);
                     res.redirect('/login')
                 })
         }).catch(err => console.log(err));
+};
+
+exports.postLogout = (req, res, next) => {
+    req.session.destroy((err) => {
+        console.log(err);
+        res.redirect('/')
+    });
 };

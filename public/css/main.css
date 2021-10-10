@@ -150,3 +150,28 @@ div.stickyTest2 {
   position: sticky;
   top: 0px;
 }
+.countries{
+  width: 60%;
+  height: auto; /*arbitrary value*/
+  margin: 25px auto;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+}
+.effects{
+  width: 60%;
+  height: auto; /*arbitrary value*/
+  margin: 25px auto;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+}
+
+.purpose{
+  width: 60%;
+  height: auto; /*arbitrary value*/
+  margin: 25px auto;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+}
