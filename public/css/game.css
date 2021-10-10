@@ -73,3 +73,12 @@ div.centralContent {
   color: red;
   text-decoration: underline;
 }
+
+button#saveButton {
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #23b5aa;
+}
