@@ -39,6 +39,7 @@ exports.getLogin = (req, res, next) => {
 
 exports.postAddSentence = (req, res, next) => {
     req.user.addSentence();
+    res.sendStatus(200);
 }
 
 exports.postSignup = (req, res, next) => {
