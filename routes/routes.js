@@ -3,7 +3,7 @@ const router = express.Router();
 const controller = require('../controllers/controller');
 const isAuth = require('../middleware/is-auth')
 
-router.get('/', controller.getIndex);
+router.get('/', controller.getAbout);
 router.get('/profile', isAuth, controller.getProfile);
 router.get('/about', controller.getAbout);
 router.get('/game', controller.getGame);
