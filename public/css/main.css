@@ -23,27 +23,39 @@ div.centralContent {
 
 div.mainPage {
   display: grid;
-  grid-template-columns: repteat(8 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 10% 10% 1fr 1fr 1fr 1fr;
 }
 div.centralContent > img.profilePic {
   /* display: inline-block; */
+  grid-column: 1/2;
+  grid-row: 1/2;
   border-radius: 100%;
   margin-left: 40px;
   width: 75px;
 }
 div.centralContent > h1 {
-  display: inline;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  /* display: inline; */
   font-weight: lighter;
   font-size: 3em;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   margin-bottom: 0;
   margin-top: -15px;
 }
 div.centralContent > p.date-timePosted {
+  grid-column: 2/-1;
+  grid-row: 1/2;
   color: rgba(0, 0, 0, 0.6);
-  padding-left: 140px;
-  margin-top: 0px;
+  /* padding-left: 140px; */
+  margin-top: 40px;
+}
+div.centralContent > p.postComment {
+  grid-column: 1/-1;
+  grid-row: 4/-1;
+  padding: 0 40px;
+  line-height: 1.5em;
 }
 
 /* div#leaderBoardToggleSwitch_holder {

@@ -42,9 +42,12 @@ async function renderNewQuote() {
     const quote = await getRandomQuote(); 
     quoteDisplayElement.innerHTML = ''; 
     sentenceCountValue += 1;
-    fetch("/addSentence", {
-        method: "POST"
-      })
+    console.log(sentenceCountValue);
+    if (sentenceCountValue > 0) {
+        fetch("/addSentence", {
+            method: "POST"
+          })
+    }
     document.getElementById('SC_value').innerHTML = sentenceCountValue;
     quote.split('').forEach(character => { 
         const characterSpan = document.createElement('span');
