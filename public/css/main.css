@@ -17,11 +17,15 @@ div.centralContent {
   height: auto; /*arbitrary value*/
   margin: 25px auto;
   padding: 25px 0;
-  /* text-align: center; */
   background-color: white;
   border: 5px solid #d67d7d;
 }
 
+div.mainPage {
+  display: grid;
+  grid-template-columns: repteat(8 1fr);
+  grid-template-rows: 10% 10% 1fr 1fr 1fr 1fr;
+}
 div.centralContent > img.profilePic {
   /* display: inline-block; */
   border-radius: 100%;
