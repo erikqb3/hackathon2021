@@ -48,6 +48,7 @@ app.use((req, res, next) => {
                 return next();
             }
             req.user = user;
+            res.locals.username = user.username;
             next();
         })
         .catch(err => {
