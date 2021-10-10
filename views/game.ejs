@@ -19,7 +19,9 @@
             <div id="sentenceCount">Sentence/Page Count = <span id=SC_value>0</span></div>
             <div>Speed = <span id="recentSpeed">0</span> wpm</div>
             <div>Fastest Speed = <span id="topSpeed">0</span> wpm</div>
-            <button id="saveButton">Quit and Save</button>
+            <form action="/addUserStats" method="POST">
+                <button id="saveButton">Quit and Save</button>
+            </form>
         </div>
     </div>
 </body>

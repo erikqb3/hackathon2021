@@ -13,6 +13,7 @@ router.get('/contact', controller.getContact);
 router.get('/signup', controller.getSignup);
 router.get('/login', controller.getLogin);
 
+router.post('/addSentence', controller.postAddSentence)
 router.post('/signup', controller.postSignup);
 router.post('/login', controller.postLogin);
 router.post('/logout', controller.postLogout);

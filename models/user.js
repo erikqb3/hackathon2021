@@ -10,7 +10,16 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+    numSentences: {
+        type: Number,
+        required: true
     }
-})
+});
+
+userSchema.methods.addSentence = function () {
+    this.numSentences = numSentances++;
+    return this.save()
+}
 
 module.exports = mongoose.model('User', userSchema)
