@@ -26,18 +26,19 @@ div.centralContent > img.profilePic {
   /* display: inline-block; */
   border-radius: 100%;
   margin-left: 40px;
-  width: 50px;
+  width: 75px;
 }
 div.centralContent > h1 {
   display: inline;
   font-weight: lighter;
-  font-size: 4em;
+  font-size: 3em;
   padding-left: 20px;
   margin-bottom: 0;
+  margin-top: -15px;
 }
-div.centralContent > p {
+div.centralContent > p.date-timePosted {
   color: rgba(0, 0, 0, 0.6);
-  padding-left: 115px;
+  padding-left: 140px;
   margin-top: 0px;
 }
 
