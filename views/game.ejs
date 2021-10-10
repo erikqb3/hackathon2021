@@ -10,15 +10,16 @@
     <title>FreeRead_Game</title>
 </head>
 <body>
-    <%- include('navLinks_shortcut.ejs') %>
+    <%- include('htmlShortcuts.ejs') %>
     <div class="centralContent">
         <div class="timer" id="timer"></div>
         <div class="container">
             <div class="quote-display" id="quoteDisplay"></div>
             <textarea id="quoteInput"  class="quote-input" autofocus></textarea>
-            <div id="sentenceCount">Sentence Count = <span id=SC_value>0</span></div>
+            <div id="sentenceCount">Sentence/Page Count = <span id=SC_value>0</span></div>
             <div>Speed = <span id="recentSpeed">0</span> wpm</div>
             <div>Fastest Speed = <span id="topSpeed">0</span> wpm</div>
+            <button id="saveButton">Quit and Save</button>
         </div>
     </div>
 </body>

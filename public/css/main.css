@@ -1,5 +1,6 @@
 body {
   background-color: #fff0a0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #banner {
@@ -7,13 +8,8 @@ body {
   width: 65%;
   height: 200px;
   margin: 0 auto;
+  border: 5px solid #d67d7d;
 }
-
-/* #stickySidesContainer {
-  position: sticky;
-  background-color: black;
-  top: 300px;
-} */
 
 div.centralContent {
   width: 60%;
@@ -22,18 +18,42 @@ div.centralContent {
   padding: 25px 0;
   /* text-align: center; */
   background-color: white;
+  border: 5px solid #d67d7d;
 }
 
+div.centralContent > img.profilePic {
+  /* display: inline-block; */
+  border-radius: 100%;
+  margin-left: 40px;
+  width: 50px;
+}
+div.centralContent > h1 {
+  display: inline;
+  font-weight: lighter;
+  font-size: 4em;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+div.centralContent > p {
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 115px;
+  margin-top: 0px;
+}
+
+/*Nav Stuff*/
 nav > ul {
+  width: 17.5%;
   position: absolute;
-  /* top: 300px; */
   left: 0;
   list-style: none;
-  /* background-color: #35c0ff; */
-  width: 15%;
-  font-size: 3em;
+  font-size: 2.5em;
   padding: 0;
-  /* margin-left: 40px; */
+  margin-top: 24px;
+  height: auto;
+  /* background-color: rgba(255, 255, 255, 0.39); */
+  padding-right: 25px;
+  padding-bottom: 15px;
+  /* padding-top: 50px; */
 }
 
 li > a:link,
@@ -47,62 +67,111 @@ li > a:active {
   width: 100%;
   display: block;
   padding: 15px 0;
-  padding-left: 40px;
-  padding-right: -40px;
+  /* padding-left: 3vh; */
+  padding-left: 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  margin: 15px 0 auto;
 }
 
 nav > ul > li > a:hover {
   background-color: #d67d7d;
 }
 
-div#friendList > ul {
+/*friend list*/
+/* div#friendList > ul {
   position: absolute;
   display: block;
-  /* top: 300px; */
   right: 0;
-  width: 15%;
-  background-color: rgba(25, 85, 112, 0.75);
   font-size: 1.5em;
   margin-top: 50px;
-  padding-right: 40px;
-  padding-left: 0;
-  height: 522px;
+  padding: 0;
+  height: 474px;
+  width: 17.5%;
+  overflow: auto;
+} */
+ul#friendList_holder {
+  width: 17.5%;
+  position: absolute;
+  display: block;
+  right: 0;
+  font-size: 1.5em;
+  height: 558px;
+  overflow: auto;
+  padding: 0;
+  padding-right: 25px;
 }
 
 ul#friendList_holder > li {
   list-style: none;
   display: block;
   background-color: #35c0ff;
-  /* border-top: 1px solid rgba(0, 0, 0, 0.25); */
+  margin: 15px 0 auto;
   width: 100%;
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
-
-  /* padding: 0 40px; */
+  padding-right: 10px;
+  padding-left: 15px;
+  padding-top: 15px;
+  /* width:5400px; */
+  /* padding-right: 25px; */
+  /* width: 100%; */
 }
 
-ul#friendList_holder > li.friendName {
-  display: block;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+ul#friendList_holder > li > img {
+  /* margin-top: 15px; */
+  width: 35px;
+  border-radius: 100%;
+  /* padding-top: 15px; */
+}
+
+ul#friendList_holder > li > div.friendName {
+  display: inline;
   font-size: 1.25em;
-  width: 100%;
-  padding-left: 20px;
+  /* padding-top: 400px; */
+  /* width: 100%; */
+  /* padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 20px; */
+  line-height: 2em;
+  margin: 0;
 }
-ul#friendList_holder > li.readingWhat {
+ul#friendList_holder > li > div.readingWhat {
   display: block;
   font-size: 0.75em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  width: 100%;
-  padding-left: 40px;
-  padding-bottom: 20px;
-  /* padding-right: -20px; */
+  margin-top: -15px;
+  padding-bottom: 15px;
+  /* text-align: right; */
+  /* width: 10%; */
+  /* margin-left: 100px; */
+  /* padding-bottom: 20px; */
+  /* padding-right: 20px; */
 }
 
 div.stickyTest2 {
   position: sticky;
   top: 0px;
+}
+.countries{
+  width: 60%;
+  height: auto; /*arbitrary value*/
+  margin: 25px auto;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+}
+.effects{
+  width: 60%;
+  height: auto; /*arbitrary value*/
+  margin: 25px auto;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+}
+
+.purpose{
+  width: 60%;
+  height: auto; /*arbitrary value*/
+  margin: 25px auto;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
 }
