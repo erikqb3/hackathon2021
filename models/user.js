@@ -18,8 +18,8 @@ const userSchema = new Schema({
 });
 
 userSchema.methods.addSentence = function () {
-    this.numSentences = numSentances++;
-    return this.save()
+    this.numSentences++;
+    return this.save();
 }
 
 module.exports = mongoose.model('User', userSchema)

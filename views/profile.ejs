@@ -16,6 +16,8 @@
     <main>
         <div class="centralContent">
             <p>Welcome <%= username %></p>
+            <p>You have typed <%= numSentences %> sentences.</p>
+            <p>You have donated <%= (numSentences % 10) %> books</p>
             <form action="/logout" method="POST">
                 <button type="submit">Logout</button>
             </form>
